@@ -17,6 +17,7 @@
 ##### 1、 商品展示业务模块，包括大类Category、小类Product和具体商品Item的展示和搜索功能。
 
 ###### 1.1大类Category
+![大类category](https://images.gitee.com/uploads/images/2021/0201/205346_e47bda07_8534172.jpeg "category.jpg")
 
 > 大类Category先实现Category.jsp进行大类的具体展示，利用jsp中c:foreach语法对每个大类进行展示，具体类的ID利用a标签进行跳转到小类进行查看，接下来实现domain层的Category.java，完成大类的基础设计，接下来实现persistence中的数据库连接层，先写DAO定义所有接口，再写实现的Implement方法，对数据库进行操作；再写一个Category的Service类，可以在Servlet层中调用该类的相关方法进行进一步操作，最后完成ViewCategoryServlet对jsp页面与业务层进行连接跳转。
 
@@ -48,6 +49,7 @@ public class ViewCategoryServlet extends HttpServlet {
 ```
 
 ###### 1.2小类Product
+![小类Product](https://images.gitee.com/uploads/images/2021/0201/205709_0b6f1fb8_8534172.jpeg "product.jpg")
 
 > 小类Product先完善Product.jsp，主要是通过productId对产品类进行信息展示，之后再实现Product.java，接下进行ProductDAOImpl数据库的连接进行编写，最后完成Servlet的编写。
 
@@ -74,6 +76,7 @@ public class ViewProductServlet extends HttpServlet {
 ```
 
 ###### 1.3具体商品Item
+![具体商品item](https://images.gitee.com/uploads/images/2021/0201/205806_ab80d0a8_8534172.jpeg "item.jpg")
 
 > 用户点击产品后进入查看具体商品，完善Item.jsp，Copy代码模版中的Item.java，实现ItemDAOImpl的具体数据库连接操作，完成最后的Servlet连接。
 
@@ -102,6 +105,7 @@ public class ViewItemServlet extends HttpServlet {
 ```
 
 ###### 1.4完成搜索功能
+![搜索功能](https://images.gitee.com/uploads/images/2021/0201/205902_7d62e88d_8534172.jpeg "search.jpg")
 
 > 搜索功能先完善显示的SearchProducts.jsp，接下直接进行SearchProductServlet编写和配置，通过获得输入的关键字再通过CatalogService的方法进行查找并显示。
 
@@ -137,6 +141,7 @@ public class SearchProductServlet extends HttpServlet {
 ##### 2. 用户管理业务模块，包括用户注册、登录、修改用户信息、查询用户相关订单等业务功能。
 
 ###### 2.1用户注册
+![register](https://images.gitee.com/uploads/images/2021/0201/205942_8e7ce395_8534172.jpeg "register.jpg")
 
 > 用户注册时，需要一个全新的包含用户所有信息的输入界面即NewAccountForm.jsp，之后需要先进行设计NewAccountFormServlet，该Servlet的功能仅为实现用户点击注册后跳转用户输入新账号信息的表格，接下实现Account.java，完成Account的基础功能，之后进行AccountDAO接口定义以及完成AccountDAOImpl连接数据库的实现，接下来完成AccountService的编写，之后进行NewAccountServlet配置，获取网页界面的信息，赋值给一个新账号，再将该账号插入到数据库中。
 
@@ -262,6 +267,7 @@ public class NewAccountServlet extends HttpServlet {
 ```
 
 ###### 2.2用户登录
+![login](https://images.gitee.com/uploads/images/2021/0201/210019_2297ef79_8534172.jpeg "login.jpg")
 
 > 用户登录先完成SignonForm.jsp，能够使用户输入登入的账号与密码，接下来先用一个Servlet实现SignOnFormServlet实现点击登录时网页跳转到用户输入账号密码的界面，接下来使用SignOnServlet实现获取用户的账号密码对数据库进行核查，如果存在则登录，反之则给予一定的错误信息提示。
 
@@ -340,6 +346,7 @@ public class SignOnServlet extends HttpServlet {
 ```
 
 ###### 2.3用户修改信息
+![修改userinfo](https://images.gitee.com/uploads/images/2021/0201/210123_4fa22990_8534172.jpeg "userinfo.jpg")
 
 > 修改个人账号信息也就是进行个人信息查看，同时可以进行修改，修改后点击Save Account Information即可获取新的用户信息，之后进行数据库信息更新。
 
@@ -586,6 +593,7 @@ public class AddItemToCartServlet extends HttpServlet {
 ```
 
 ###### 3.2更改购物车商品的数量信息
+![修改商品数量](https://images.gitee.com/uploads/images/2021/0201/210255_f561bb0c_8534172.jpeg "cartupdate.jpg")
 
 > 在购物车的数量栏输入想要更改后的商品数量，点击Update Cart即可更新购物车中的商品数量、总价。点击之后利用UpdateCartQuantitiesServlet实现信息更新以及页面更新，传递商品的数量信息获取后进行相关操作。
 
@@ -1224,6 +1232,7 @@ public class LogService {
 #### 二、试验步骤及响应代码展示
 
 ##### 1. 账号管理模块。在新建账号信息页面上使用AJAX进行表单验证，实现“判断用户名是否已存在”功能。
+![用户名是否存在](https://images.gitee.com/uploads/images/2021/0201/210418_4d789a8f_8534172.jpeg "usernameexist.jpg")
 
 ###### 1.1实现方法
 
@@ -1286,6 +1295,7 @@ out.close();
 ```
 
 ##### 2.查询商品模块。在主页面右上角的查询商品功能中添加自动补全功能。
+![自动补全](https://images.gitee.com/uploads/images/2021/0201/210459_001affff_8534172.jpeg "search.jpg")
 
 ###### 2.1实现方法
 
@@ -1542,6 +1552,7 @@ out.close();
 ```
 
 ##### 3.购物车模块。在购物车模块中修改购买数量时，通过AJAX修改购物车信息，而不再要求用户点击更新按钮才能更新商品信息。
+![购物车更新](https://images.gitee.com/uploads/images/2021/0201/210549_d6ed7682_8534172.jpeg "change.jpg")
 
 ###### 3.1实验方法
 
@@ -1630,6 +1641,7 @@ out.write(quantityAll);
 ```
 
 ##### 4.商品展示模块。在首页展示商品的图片上添加AJAX效果，即当鼠标移到某个商品图片上时，用悬浮窗展示该类型商品的信息，鼠标移开时悬浮窗隐藏。
+![鼠标悬浮窗](https://images.gitee.com/uploads/images/2021/0201/210643_2f949540_8534172.jpeg "fork.jpg")
 
 ###### 4.1实现方法
 
