@@ -274,4 +274,13 @@
         <servlet-name>FindResultServlet</servlet-name>
         <url-pattern>/findResultServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateCartJSServlet</servlet-name>
+        <servlet-class>org.csu.mypetstore.web.servlets.UpdateCartJSServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCartJSServlet</servlet-name>
+        <url-pattern>/updateCartJSServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
