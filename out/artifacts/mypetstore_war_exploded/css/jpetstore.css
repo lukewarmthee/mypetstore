@@ -4,7 +4,7 @@ body {
   font-family: helvetica, tahoma, arial, verdana, sans-serif;
   font-size: 2ex;
   color: #333;
-  background-color: #444;
+  background-color: #444444;
 }
 
 pre {
@@ -24,13 +24,18 @@ h1 {
   color: #666;
 }
 
+#Welcome{
+  color: darkorange;
+}
+
+
 h2 {
   margin: 2ex 0ex 1ex 0ex;
   padding: 0ex;
 
   line-height: 2ex;
   font-weight: 700;
-  color: #444;
+  color: deepskyblue;
 }
 
 h3 {
@@ -61,23 +66,30 @@ li {
 }
 
 table {
-  border-width: 0;
-  empty-cells: show;
+  font-family: verdana,arial,sans-serif;
+  font-size:11px;
+  color:#333333;
+  border-width: 1px;
+  border-color: #999999;
+  border-collapse: collapse;
 }
-
-td, th {
-  empty-cells: show;
-  padding: .3ex .3ex;
-  vertical-align: top;
-  text-align: left;
-  border-width: 0;
-  border-spacing: 0;
-  background-color: #ececec
-}
-
 th {
-  font-weight: bold;
-  background-color: #e2e2e2;
+  background-color:#c3dde0;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9c6c9;
+}
+
+tr{
+  background-color:#d4e3e5;
+}
+
+td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9c6c9;
 }
 
 a, a:visited, a:link {
@@ -312,7 +324,7 @@ body>#Banner {
 #Cart{
   width: 69.99%;
   float: left;
-  background-color:#fff;
+  background-color: #fff;
 }
 
 #MyList{
