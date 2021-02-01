@@ -283,4 +283,14 @@
         <servlet-name>UpdateCartJSServlet</servlet-name>
         <url-pattern>/updateCartJSServlet</url-pattern>
     </servlet-mapping>
+
+    <!--鼠标移动，商品悬浮窗信息展示-->
+    <servlet>
+        <servlet-name>CategoryShowJsServlet</servlet-name>
+        <servlet-class>org.csu.mypetstore.web.servlets.CategoryShowJsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryShowJsServlet</servlet-name>
+        <url-pattern>/categoryShowJsServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
