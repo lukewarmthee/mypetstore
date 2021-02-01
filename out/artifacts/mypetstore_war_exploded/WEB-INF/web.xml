@@ -265,4 +265,13 @@
         <servlet-name>UsernameIsExistServlet</servlet-name>
         <url-pattern>/usernameIsExistServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindResultServlet</servlet-name>
+        <servlet-class>org.csu.mypetstore.web.servlets.FindResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindResultServlet</servlet-name>
+        <url-pattern>/findResultServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

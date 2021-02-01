@@ -12,6 +12,9 @@
 
 <head>
     <link rel="StyleSheet" href="css/jpetstore.css" type="text/css" media="screen" />
+    <link rel="StyleSheet" href="css/searchProduct.css" type="text/css" media="screen" />
+    <link rel="StyleSheet" href="css/cartChange.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/mouseEventInform.css" type="text/css" media="screen" />
 
     <meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st November 2002), see www.w3.org" />
     <title>MyPetStore</title>
@@ -21,6 +24,8 @@
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="Pragma" content="no-cache" />
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 </head>
 
 <body>
@@ -61,12 +66,16 @@
         <div id="SearchContent">
             <!--搜索栏目-->
             <form action="searchProduct" method="post">
-                <input type="text" name="keyword" size="14" />
+                <input type="text" id="keyword" name="keyword" size="14"/>
+                <div class="auto hidden" id="auto">
+                    <div class="auto_out">1</div>
+                    <div class="auto_out">2</div>
+                </div>
                 <input type="submit" name="searchProducts" value="Search" />
+                <script src="js/searchProduct.js"></script>
             </form>
         </div>
     </div>
-
     <div id="QuickLinks">
         <a href="viewCategory?categoryId=FISH"><img src="images/sm_fish.gif" /></a>
         <img src="images/separator.gif" />
