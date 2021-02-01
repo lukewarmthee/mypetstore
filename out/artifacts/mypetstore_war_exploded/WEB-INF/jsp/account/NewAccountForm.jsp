@@ -9,7 +9,11 @@ ${sessionScope.messageAccount}
 		<table>
 			<tr>
 				<td>User ID:</td>
-				<td><input type="text" name="username"/></td>
+				<td>
+					<input type="text" name="username" id="username"  onblur="usernameIsExist();"/>
+					<div id="usernameMsg"></div>
+					<script type="text/javascript" src="${pageContext.request.contextPath }/js/register.js"></script>
+				</td>
 			</tr>
 			<tr>
 				<td>New password:</td>
