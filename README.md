@@ -1,4 +1,4 @@
-# 		    			Web应用开发技术
+# 		    			Web应用开发技术试验报告
 
 ## 				实验一 基于MVC用JSP/Servlet实现JPetStore
 
