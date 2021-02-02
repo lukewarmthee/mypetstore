@@ -113,7 +113,7 @@ a.Button, a.Button:link, a.Button:visited {
 }
 
 a.Button:hover {
-  color: #000;
+  color: #a9c6c9;
   background-color: #54c07a;
 }
 
@@ -126,7 +126,7 @@ a.Button:hover {
   border-style: solid;
   border-color: #ccc;
   float: left;
-  background-color: #000;
+  background-color: #a9c6c9;
   color: #fff;
   line-height: 9ex;
   voice-family: "\"}\"";
@@ -147,7 +147,7 @@ body>#Logo {
   border-style: solid;
   border-color: #ccc;
   float: left;
-  background-color: #000;
+  background-color: #a9c6c9;
   color: #eaac00;
   text-decoration: none;
   font-family: helvetica, tahoma, arial, verdana, sans-serif;
@@ -181,7 +181,7 @@ body>#Menu {
   border-color: #ccc;
   float: left;
   text-align: center;
-  background-color: #000;
+  background-color: #a9c6c9;
   color: #eaac00;
   line-height: 9ex;
   voice-family: "\"}\"";
@@ -216,7 +216,7 @@ body>#Search {
   border-style: solid;
   border-color: #ccc;
   float: left;
-  background-color: #000;
+  background-color: #a9c6c9;
   color: #fff;
   line-height: 9ex;
   voice-family: "\"}\"";
@@ -237,7 +237,7 @@ body>#PoweredBy {
   border-style: solid;
   border-color: #ccc;
   float: left;
-  background-color: #000;
+  background-color: #a9c6c9;
   color: #fff;
   line-height: 9ex;
   voice-family: "\"}\"";
@@ -303,7 +303,7 @@ body>#Banner {
   border-width:0;
 }
 #Catalog input[type="submit"]:hover {
-  color: #000;
+  color: #a9c6c9;
   background-color: #54c07a;
   cursor:pointer;
 }
@@ -318,7 +318,7 @@ body>#Banner {
   float: right;
   border-width: .1ex 0ex .1ex 0px;
   border-style: solid;
-  border-color: #000;
+  border-color: #a9c6c9;
 }
 
 #Cart{
